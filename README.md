@@ -11,6 +11,7 @@ I added a pause menu.
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
 [Player Model and Animations](https://assetstore.unity.com/packages/3d/characters/minotaur1-196863)
+[Goblin Enemy and Animations](https://assetstore.unity.com/packages/3d/environments/fantasy/goblin-cannon-145437)
 ## Future Development
 
 ## Created by
