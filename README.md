@@ -7,6 +7,9 @@ A player that can move using WASD and can control the camera with the mouse. The
 I added a second camera that you can switch to with the H key to act as a hint if you get stuck in the maze.
 
 I added a pause menu.
+
+I added the player's weapon (axe) to be seen in first person when the player is walking around.
+
 ## References
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
