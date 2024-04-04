@@ -10,6 +10,10 @@ I added a pause menu.
 
 I added the player's weapon (axe) to be seen in first person when the player is walking around.
 
+I added a timer in the top left that tracks how much time has passed.
+
+I added a score in the top right that is increased when an enemy is killed.
+
 ## References
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
