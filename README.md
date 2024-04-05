@@ -18,7 +18,13 @@ I added a clock in the top left that tells you how much time you have left and e
 
 I added a score in the top right that is increased when an enemy is killed or a gem is picked up.
 
-I added different types of collectible gems that are worth different point values, and it updates your score in the top right when you collect one.
+I added different types of collectible gems worth different point values, and it updates your score in the top right when you collect one.
+
+I added a main menu scene that lets you play the game or quit.
+
+I added an end scene that lets you know your score and lets you go back to the main menu or quit.
+
+I added background music.
 
 ## References
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
