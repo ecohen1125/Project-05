@@ -14,6 +14,8 @@ I added a timer in the top left that tracks how much time has passed.
 
 I added a score in the top right that is increased when an enemy is killed.
 
+I added different types of collectable gems that are worth different point values.
+
 ## References
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
