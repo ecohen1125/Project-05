@@ -19,6 +19,7 @@ I added a score in the top right that is increased when an enemy is killed.
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
 [Player Model and Animations](https://assetstore.unity.com/packages/3d/characters/minotaur1-196863)
 [Goblin Enemy and Animations](https://assetstore.unity.com/packages/3d/environments/fantasy/goblin-cannon-145437)
+[Gems](https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764)
 ## Future Development
 
 ## Created by
