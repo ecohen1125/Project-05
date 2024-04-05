@@ -2,7 +2,7 @@
 ## Implementation / Features you added
 I could not get the maze we were given in class to tile properly in first person. It would look like a double wall with one poking through another. So I found a new one online that tiled properly (see Maze Generation and Assets).
 
-I changed the materials on the walls and floor to give it a cave-like feel to it.
+I changed the materials on the walls and floor to give it a cave-like feel.
 
 A player that can move using WASD and can control the camera with the mouse. The player spawns in the corner of the maze.
 
