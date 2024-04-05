@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Coin
+  - Floor
+  - Castle
+  - enemyBug
+  - enemy
+  - gem
+  - gemParent
+  - score
   layers:
   - Default
   - TransparentFX
@@ -11,8 +19,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Minotaur
+  - axe
   - 
   - 
   - 
