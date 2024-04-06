@@ -26,12 +26,15 @@ I added an end scene that lets you know your score and lets you go back to the m
 
 I added background music.
 
+I added assets to make the UI look better.
+
 ## References
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
 [Player Model and Animations](https://assetstore.unity.com/packages/3d/characters/minotaur1-196863)
 [Goblin Enemy and Animations](https://assetstore.unity.com/packages/3d/environments/fantasy/goblin-cannon-145437)
 [Gems](https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764)
+[UI Assets](https://www.kenney.nl/assets/ui-pack-rpg-expansion)
 ## Future Development
 None
 
