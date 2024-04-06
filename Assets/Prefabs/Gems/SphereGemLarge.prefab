@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728b71b99f03e3f40bafbe2aec448a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointValue: 0
+  clip: {fileID: 7692303886039354945, guid: 4b809f132bbb243478835c5656db6c00, type: 3}
 --- !u!65 &2222971518084127436
 BoxCollider:
   m_ObjectHideFlags: 0

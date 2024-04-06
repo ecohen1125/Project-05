@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour {
 
     public Animator anim;
     NavMeshAgent agent;
+    public AudioSource minotaurSound;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class Enemy : MonoBehaviour {
         anim = GetComponent<Animator>();
         newDestinationTime = Random.Range(0, 5);
         agent.speed = speed;
+
+        minotaurSound = GameObject.FindGameObjectWithTag("minotaurSound").GetComponent<AudioSource>();
     }
 
     void Update () 
@@ -37,9 +40,16 @@ public class Enemy : MonoBehaviour {
         {
             tempDestinationTime -= Time.deltaTime;
         }
+    }
 
-        //anim.SetBool("RUN", false);
-        //anim.SetBool("Attack", true);
+    private void OnTriggerEnter(Collider other) {
+        if (other.tag == "Player") {
+            GameObject[] hearts = GameObject.FindGameObjectsWithTag("heart");
+            minotaurSound.Play(0);
+
+            GameController.health--;
+            Destroy(hearts[0]);
+        }
     }
 }
 

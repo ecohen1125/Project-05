@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -15,8 +16,11 @@ public class GameController : MonoBehaviour
     float timePassedInt;
     public int minutes;
     public int seconds;
-    public int testPoints;
     Scene scene;
+
+    public GameObject heartsParent;
+    public Sprite heart;
+    public static int health;
 
     void Awake() {
         DontDestroyOnLoad(this.transform.gameObject);
@@ -28,7 +32,18 @@ public class GameController : MonoBehaviour
         minutes = 3;
         seconds = 0;
 
-        points += testPoints;
+        health = 3;
+
+        for (int i = 0; i < health;  i++) {
+            GameObject NewObj = new GameObject();
+            Image NewImage = NewObj.AddComponent<Image>();
+            NewImage.sprite = heart;
+            NewObj.GetComponent<RectTransform>().SetParent(heartsParent.transform);
+            NewObj.transform.localScale = Vector3.one;
+            NewObj.transform.transform.localPosition = new Vector3((i * -125), 0, 0);
+            NewObj.tag = "heart";
+            NewObj.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -40,7 +55,7 @@ public class GameController : MonoBehaviour
             timePassed += Time.deltaTime;
             timePassedInt = Mathf.FloorToInt(timePassed);
             if (timePassedInt >= 1) {
-                if (minutes == 0 && seconds == 0) {
+                if ((minutes == 0 && seconds == 0) || health == 0) {
                     SceneManager.LoadScene("EndScene");
                 } else if (seconds == 0) {
                     seconds = 59;
@@ -52,8 +67,6 @@ public class GameController : MonoBehaviour
                 timePassedInt = 0;
                 timePassed = 0;
             }
-
-
 
             time.text = "Time: " + minutes + ":" + seconds.ToString().PadLeft(2, '0');
 

@@ -10,6 +10,8 @@ public class Axe : MonoBehaviour
     bool swung;
 
     RaycastHit hit;
+    public AudioSource axeSound;
+    public AudioSource goblinSound;
 
     // Start is called before the first frame update
     void Start()
@@ -22,14 +24,16 @@ public class Axe : MonoBehaviour
     {
         if (!PauseMenu.isPaused && Input.GetKeyDown(KeyCode.Mouse0)) {
             swung = true;
+            axeSound.Play(0);
         }
 
         if (swung) {
-            axe.transform.localPosition = Vector3.Slerp(axe.localPosition, end.transform.localPosition, 0.05f);
-            axe.transform.localRotation = Quaternion.Slerp(axe.localRotation, end.transform.localRotation, 0.05f);
+            axe.transform.localPosition = Vector3.Slerp(axe.localPosition, end.transform.localPosition, 0.01f);
+            axe.transform.localRotation = Quaternion.Slerp(axe.localRotation, end.transform.localRotation, 0.01f);
 
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1)) {
                 if (hit.collider.tag == "enemy") {
+                    goblinSound.Play(0);
                     Destroy(hit.collider.gameObject);
                     GameController.points += 1;
                 }

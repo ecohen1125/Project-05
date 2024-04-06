@@ -460,6 +460,7 @@ GameObject:
   - component: {fileID: 135975656248482850}
   - component: {fileID: 1288533023469165913}
   - component: {fileID: 2547880710115309911}
+  - component: {fileID: 8061994582449836071}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: enemy
@@ -523,7 +524,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.7
   m_Center: {x: 0, y: 0.5, z: 0}
@@ -563,6 +564,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &8061994582449836071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258991314359982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.49039584, y: 1.0868703, z: 0.49281988}
+  m_Center: {x: 0.0014100671, y: 0.5808231, z: 0.0047525316}
 --- !u!1 &1300070071406548
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,7 +911,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

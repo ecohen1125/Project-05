@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointValue: 0
+  clip: {fileID: 7692303886039354945, guid: 4b809f132bbb243478835c5656db6c00, type: 3}
 --- !u!65 &3950761788517827548
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.AI;
 using Unity.AI.Navigation;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -10,31 +9,31 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject[] enemies;
     RaycastHit hit;
-    public NavMeshSurface[] surface;
-    //public NavMeshSurface path;
+    public NavMeshSurface[] surfaces;
+    public NavMeshSurface path;
     public float spawnTime;
     float spawnTimer;
+
+    public GameObject ceiling;
 
     // Start is called before the first frame update
     void Start()
     {
-        surface = GameObject.FindObjectsOfType<NavMeshSurface>();
+        ceiling.SetActive(false);
+        surfaces = GameObject.FindObjectsOfType<NavMeshSurface>();
 
-        for (int i = 1;  i < surface.Length; i++)
+        surfaces[0].BuildNavMesh();
+        
+        for (int i = 1;  i < surfaces.Length; i++)
         {
-            Destroy(surface[i]);
+            Destroy(surfaces[i]);
         }
 
-        /*for (int i = 0; i < surface.Length; i++) {
-            surface[i].BuildNavMesh();
-        }*/
-
-        surface[0].BuildNavMesh();
+        ceiling.SetActive(true);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (spawnTimer <= 0) {
             int randomX = Random.Range(5, 37);
             int randomZ = Random.Range(5, 37);
@@ -50,6 +49,12 @@ public class EnemySpawner : MonoBehaviour
             spawnTimer = spawnTime;
         } else {
             spawnTimer -= Time.deltaTime;
+        }
+    }
+
+    public void BuildNavMesh() {
+        foreach (var surface in surfaces) {
+            surface.BuildNavMesh();
         }
     }
 }
