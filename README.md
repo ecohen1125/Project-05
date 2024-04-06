@@ -30,6 +30,8 @@ I added assets to make the UI look better.
 
 I added a health system so you lose a heart when you walk into a goblin. If you run out of hearts, the game ends.
 
+I added sound effects for when a gem is picked up, the axe is swung, a goblin is killed, and the player is hurt.
+
 ## References
 [Maze Generation and Assets](https://assetstore.unity.com/packages/tools/modeling/maze-generator-38689)
 [Materials for Maze](https://assetstore.unity.com/packages/2d/textures-materials/free-stylized-pbr-textures-pack-111778)
@@ -38,6 +40,7 @@ I added a health system so you lose a heart when you walk into a goblin. If you 
 [Gems](https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764)
 [UI Assets](https://www.kenney.nl/assets/ui-pack-rpg-expansion)
 [Heart Assets](https://assetstore.unity.com/packages/tools/gui/simple-heart-health-system-120676)
+[All sound effects](https://freesound.org/)
 ## Future Development
 None
 
